@@ -6,13 +6,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://afroatenas.org/wp-content/themes/afroatenas-theme/style.css">
 	<?php wp_head(); ?>
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' );?>">
+
 </head>
 <body>
 <header class="site-header">
 
 	<div class="site-branding">
-		<h1 class="site-title"><a href="" rel="home">AfroAtenAs</a></h1>
-		<p class="site-description"></p>
+		<h1 class="site-title"><a href="" rel="home"><?php bloginfo( 'name' ) ?></a></h1>
+		<p class="site-description"><?php bloginfo( 'description' ) ?></p>
 	</div>
 
 	<div class="navigation-main-menu">
