@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-	<meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://afroatenas.org/wp-content/themes/afroatenas-theme/style.css">
 	<?php wp_head(); ?>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' );?>">
 
 </head>
-<body>
+<body <?php body_class();?>>
 <header class="site-header">
 
 	<div class="site-branding">
