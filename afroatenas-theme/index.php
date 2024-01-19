@@ -5,13 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://afroatenas.org/wp-content/themes/afroatenas-theme/style.css">
+	<?php wp_head(); ?>
 </head>
 <body>
 <header class="site-header">
 
 	<div class="site-branding">
-		<h1 class="site-title"><a href="" rel="home">Curso Domestika</a></h1>
-		<p class="site-description">Aprende a desarrollar temas</p>
+		<h1 class="site-title"><a href="" rel="home">AfroAtenAs</a></h1>
+		<p class="site-description"></p>
 	</div>
 
 	<div class="navigation-main-menu">
@@ -74,5 +75,6 @@
 		</div>
 	</div>
 </footer>
+<?php wp_footer(); ?>
 </body>
 </html>
