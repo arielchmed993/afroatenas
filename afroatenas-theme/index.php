@@ -45,11 +45,10 @@
                 <footer></footer>
             </article>
         </main>
+        <?php if (is_active_sidebar( 'sidebar-widgets' )):?>
         <div class="sidebar columns large-3 small-12">
-            <aside class="sidebar">
-                <section class="widget">
-                    Esto será un widget
-                </section>
+            <aside class="sidebar ">
+                <?php dynamic_sidebar( 'sidebar-widgets'  );?>
             </aside>
             <aside class="sidebar">
                 <section class="widget">
@@ -57,6 +56,8 @@
                 </section>
             </aside>
         </div>
+        <?php endif; ?>
+
     </div>
 
     <footer class="footer" id="page-footer" role="contentinfo">
