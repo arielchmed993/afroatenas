@@ -78,6 +78,8 @@ html {
          */
 body {
     margin: 0;
+  /*  background-color: black;
+    color: white;*/
 }
 
 /**
@@ -1868,9 +1870,9 @@ code {
 kbd {
     margin: 0;
     padding: 0.10526rem 0.21053rem 0;
-    background-color: #e6e6e6;
+    background-color: #000000;
     font-family: Consolas, "Liberation Mono", Courier, monospace;
-    color: #333;
+    color: #ffffff;
 }
 
 .subheader {
