@@ -32,3 +32,19 @@ function afroatenas_enqueque_scripts()
     wp_enqueue_style( 'afroatenas-style',get_stylesheet_uri());    
 }
 add_action( 'wp_enqueue_scripts','afroatenas_enqueque_scripts');
+
+function afroatenas_setup_widgets()
+{
+    register_sidebar( 
+        [
+            'id'=>'sidebar-widgets',
+            'name'=> 'Sidebar Widgets',
+            'description'=>'Drag widgets to this sidebar continer',
+            'before_widget'=>'<section id="%1$s" class="widget %2$s">',
+            'after_widget'=>'<section>',
+            'before_title'=>'<h4 class="widget-title h5">',
+            'after_title'=>'</h4>'
+        ]
+        );
+}
+add_action('widgets_init','afroatenas_setup_widgets');
