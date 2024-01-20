@@ -28,6 +28,6 @@ add_action( 'after_setup_theme', 'afroatenas_setup_theme');
 
 function afroatenas_enqueque_scripts()
 {
-    wp_enqueue_style( 'afroatenas-style',get_stylesheet_uri());
+    wp_enqueue_style( 'afroatenas-style','https://afroatenas.org/wp-content/themes/afroatenas-theme/style.css');    
 }
 add_action( 'wp_enqueque_scripts','afroatenas_enqueque_scripts');
