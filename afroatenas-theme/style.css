@@ -1861,10 +1861,10 @@ figure {
 code {
     padding: 0.10526rem 0.26316rem 0.05263rem;
     border: 1px solid #cacaca;
-    background-color: #e6e6e6;
+    background-color: #000000;
     font-family: Consolas, "Liberation Mono", Courier, monospace;
     font-weight: normal;
-    color: #333;
+    color: #ffffff;
 }
 
 kbd {
