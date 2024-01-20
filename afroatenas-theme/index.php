@@ -56,22 +56,18 @@
     </div>
 
     <footer class="footer" id="page-footer" role="contentinfo">
+
+        <?php if(is_active_sidebar( 'footer-widgets' )):?>
         <div class="footer-container row">
             <div class="sidebar columns small-12">
-                <section class="widget">
-                    WIDGET 1
-                </section>
-                <section class="widget">
-                    WIDGET 2
-                </section>
-                <section class="widget">
-                    WIDGET 3
-                </section>
+                <?php dynamic_sidebar( 'footer-widgets'  );?>
             </div>
         </div>
+        <?php endif; ?>
+
         <div class="site-info row">
             <div class="columns small-12">
-                Hecho con WordPress
+                Make by Ariel Chávez Mederos
             </div>
         </div>
     </footer>

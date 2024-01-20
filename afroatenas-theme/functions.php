@@ -46,5 +46,17 @@ function afroatenas_setup_widgets()
             'after_title'=>'</h4>'
         ]
         );
+
+        register_sidebar( 
+            [
+                'id'=>'footer-widgets',
+                'name'=> 'Footer Widgets',
+                'description'=>'Drag widgets to this footer container',
+                'before_widget'=>'<section id="%1$s" class="widget %2$s">',
+                'after_widget'=>'</section>',
+                'before_title'=>'<h4 class="widget-title h5">',
+                'after_title'=>'</h4>'
+            ]
+            );
 }
 add_action('widgets_init','afroatenas_setup_widgets');
